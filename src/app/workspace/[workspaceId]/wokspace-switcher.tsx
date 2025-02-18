@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Loader, Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -17,7 +18,7 @@ import { useCreateWorkspaceModal } from "./../../../features/workspaces/store/us
 export function WorkspaceSwitcher() {
   const router = useRouter();
   const workspaceId = useWorkspaceId();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   const [_open, setOpen] = useCreateWorkspaceModal();
 
   const { data: workspace, isLoading: workspaceLoading } = useGetWorkspace({
